@@ -1,0 +1,14 @@
+var rock = {
+  size: "large",
+  type: "magic",
+  damage: 25,
+  color: "grey"
+};
+console.log (rock.color)
+console.log(rock['size'])
+
+dataToSave = ('{"size":"large", "type":"magic", "damage":25, "color":"grey"}');
+
+var myJSON = JSON.stringify(rock);
+
+var rock = JSON.parse('{"size":"large", "type":"magic", "damage":25, "color":"grey"}');
